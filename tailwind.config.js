@@ -3,10 +3,14 @@ export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {
+			padding: {
+				30: "120px",
+			},
 			colors: {
 				background: {
 					primary: "rgba(247, 247, 247, 1)",
 					secondary: "rgba(1, 71, 255, 1)",
+					dark: "rgba(40, 40, 40, 1)",
 				},
 				border: {
 					secondary: "rgba(1, 71, 255, 1)",
