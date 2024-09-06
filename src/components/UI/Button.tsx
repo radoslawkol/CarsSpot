@@ -7,11 +7,11 @@ interface IProps {
 
 export default function Button({ variant = "solid", children }: IProps) {
 	const baseStyles =
-		"py-2 px-4 font-support font-semibold text-[15px] rounded tracking-[-0.02em] hover:scale-95 transition delay-150 ";
+		"py-2 px-4 font-support font-semibold text-[15px] rounded tracking-[-0.02em] hover:scale-95 hover:shadow-md transition delay-150";
 
 	const variantStyles = {
 		solid: `bg-background-secondary text-white`,
-		outline: `border-2 border-secondary text-secondary`,
+		outline: `border-1 border-secondary text-secondary`,
 	};
 
 	return (

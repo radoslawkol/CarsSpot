@@ -22,6 +22,9 @@ export default {
 					white: "rgba(255, 255, 255, 1)",
 				},
 			},
+			borderWidth: {
+				1: "1px",
+			},
 		},
 		fontFamily: {
 			heading: ['"Bebas Neue"', "sans-serif"],
