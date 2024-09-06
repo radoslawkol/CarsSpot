@@ -4,7 +4,7 @@ import NavItem from "./UI/NavItem";
 
 export default function Header() {
 	return (
-		<header className='flex justify-between items-center gap-4 py-4'>
+		<header className='py-4 flex justify-between items-center gap-4'>
 			<Logo />
 			<nav>
 				<ul className='flex gap-6'>
