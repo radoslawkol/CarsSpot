@@ -57,14 +57,14 @@ export default function Carousel({ activeTab }: { activeTab: number }) {
 			<Slider {...settings}>
 				{activeTab === 0 &&
 					carImages?.map((car, i) => (
-						<div>
-							<img src={car.src} alt={car.alt} key={i} />
+						<div key={i}>
+							<img src={car.src} alt={car.alt} />
 						</div>
 					))}
 				{activeTab === 1 &&
 					deliveryCarImages.map((car, i) => (
-						<div>
-							<img src={car.src} alt={car.alt} key={i} />
+						<div key={i}>
+							<img src={car.src} alt={car.alt} />
 						</div>
 					))}
 			</Slider>
