@@ -7,3 +7,15 @@
 body {
 	min-height: 100vh;
 }
+
+.slick-dots {
+	@apply static mt-4 lg:mt-8;
+}
+
+.slick-dots li button:before {
+	@apply text-[8px] text-blue-500 rounded-full; /* Tailwind classes for dot styling */ /* Hide the default 'before' content */
+}
+
+.slick-dots li.slick-active button:before {
+	@apply text-fontColor-secondary rounded-full;
+}
