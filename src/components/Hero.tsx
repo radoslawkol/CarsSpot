@@ -8,7 +8,6 @@ export default function Hero() {
 
 	useEffect(() => {
 		const header = document.getElementById("header");
-		console.log(header);
 		const headerHeight = header?.getBoundingClientRect().height ?? 70;
 
 		setHeaderHeight(headerHeight);
@@ -35,7 +34,7 @@ export default function Hero() {
 			<img
 				src={HeroImage}
 				alt='Hero image showing Audi, Mercedes and BMW cars.'
-				className='md:w-[70%] lg:w-[75%] xl:w-[70%] md:absolute md:right-0 bottom-4 lg:bottom-44 2xl:bottom-12  mt-52 md:mt-4 pl-6 sm:pl-16'
+				className='md:w-[70%] lg:w-[75%] xl:w-[70%] md:absolute md:right-0 bottom-4 lg:bottom-44 2xl:bottom-20 mt-52 md:mt-4 pl-6 sm:pl-16'
 			/>
 			<img
 				src={Lines}
