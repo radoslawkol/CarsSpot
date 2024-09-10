@@ -16,9 +16,9 @@ export default function Hero() {
 	return (
 		<section
 			style={{ height: `calc(100vh - ${headerHeight}px)` }}
-			className='relative md:px-0 py-16 md:py-24  text-fontColor-primary'
+			className='relative px-4 sm:px-8 md:px-32 2xl:px-72 py-16 md:py-24  text-fontColor-primary'
 		>
-			<div className='sm:p-8  md:px-32 2xl:px-72 flex flex-col items-center text-center sm:items-start sm:text-left gap-8 md:gap-12'>
+			<div className='flex flex-col items-center text-center sm:items-start sm:text-left gap-8 md:gap-12'>
 				<h1 className='text-6xl md:text-[76.29px] md:leading-[83.92px] font-heading tracking-[-0.04em]'>
 					Sprzedajemy samochody <br /> z europy
 				</h1>
@@ -42,7 +42,7 @@ export default function Hero() {
 				/>
 				<img
 					src={Lines}
-					className='hidden lg:block lg:relative lg:right-8 xl:right-12 -z-20'
+					className='hidden lg:block lg:relative lg:right-8 xl:right-12 2xl:right-48 -z-20'
 				/>
 			</div>
 		</section>

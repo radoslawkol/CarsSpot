@@ -32,5 +32,5 @@ export default {
 			support: ['"Roboto Flex"', "sans-serif"],
 		},
 	},
-	plugins: [require("@tailwindcss/line-clamp")],
+	plugins: [],
 };

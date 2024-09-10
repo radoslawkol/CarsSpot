@@ -2,11 +2,11 @@ import { useState } from "react";
 import Carousel from "./Carousel";
 import Tab from "./Tab";
 
-export default function Galery() {
+export default function Gallery() {
 	const [activeTab, setActiveTab] = useState(0);
 
 	return (
-		<section id='gallery' className='my-24 px-4 md:px-32 2xl:px-72'>
+		<section id='gallery' className='py-24 px-4 md:px-32 2xl:px-72'>
 			<div className='flex flex-col gap-2'>
 				<span className='text-lg md:text-[21.5px] text-fontColor-secondary'>
 					Prezentacja firmy
