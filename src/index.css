@@ -8,10 +8,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-body {
-	min-height: 100vh;
-}
-
 .slick-dots {
 	@apply static mt-4 lg:mt-8;
 }

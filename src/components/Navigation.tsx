@@ -1,5 +1,5 @@
 import Button from "./UI/Button";
-import NavItem from "./UI/NavItem";
+import NavItem from "./NavItem";
 
 interface IProps {
 	isMenuOpen: boolean;
