@@ -1,30 +1,8 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import alphaRomeo from "@assets/AlphaRomeo.png";
-import maserati from "@assets/Maserati.png";
-import audi from "@assets/Audi.png";
-
-const carImages = [
-	{ src: alphaRomeo, alt: "Red Alpha Romeo" },
-	{ src: maserati, alt: "Black Maserati Granturismo" },
-	{ src: audi, alt: "Black Audi" },
-];
-
-const deliveryCarImages = [
-	{
-		src: "https://placehold.co/600x446?text=Delivery+Van",
-		alt: "White Delivery Van",
-	},
-	{
-		src: "https://placehold.co/600x446?text=Blue+Truck",
-		alt: "Blue Truck",
-	},
-	{
-		src: "https://placehold.co/600x446?text=Small+Cargo+Van",
-		alt: "Small Cargo Van",
-	},
-];
+import { carsImages } from "@data/carsImages";
+import { deliveryCarImages } from "@data/deliveryCarsImages";
 
 export default function Carousel({ activeTab }: { activeTab: number }) {
 	const settings = {
@@ -56,7 +34,7 @@ export default function Carousel({ activeTab }: { activeTab: number }) {
 		<div className='slider-container overflow-hidden'>
 			<Slider {...settings}>
 				{activeTab === 0 &&
-					carImages?.map((car, i) => (
+					carsImages?.map((car, i) => (
 						<div key={i}>
 							<img src={car.src} alt={car.alt} />
 						</div>
